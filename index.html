@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Registration System</title>
+    <title>Sistema de Registro de Turmas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,25 @@
 
         <section id="turmas" class="classes-container"></section>
     </main>
+    <div class="container">
+        <h1>Sistema de Registro de Turmas</h1>
 
+        <section class="card">
+            <h2>Criar Turma</h2>
+            <input type="text" id="nomeTurma" placeholder="Nome da turma">
+            <button onclick="criarTurma()" class="btn-primary">Criar Turma</button>
+        </section>
+
+        <section id="turmas"></section>
+        
+        <button onclick="limparTodas()" class="btn-danger">Limpar Todas as Turmas</button>
+    </div>
     <script src="script.js"></script>
+    <script>
+       
+        window.addEventListener('DOMContentLoaded', function() {
+            carregarDados();
+        });
+    </script>
 </body>
 </html>
