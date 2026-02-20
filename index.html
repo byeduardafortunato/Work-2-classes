@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Registration System</title>
     <title>Sistema de Registro de Turmas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <main class="container">
+        <h1>Class Registration System</h1>
+
+        <section class="card">
+            <h2>Create Class</h2>
+            <input type="text" id="nomeTurma" placeholder="Class name">
+            <button onclick="criarTurma()">Create Class</button>
+        </section>
+
+        <section id="turmas" class="classes-container"></section>
+    </main>
     <div class="container">
         <h1>Sistema de Registro de Turmas</h1>
 
